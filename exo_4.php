@@ -1,7 +1,7 @@
 <?php
 
 $jourSemaine = "Jeudi";
-$jourDate = 31;
+$jourDate = 21;
 $heureMinute = 14.38;
 $alarme = true;
 
