@@ -15,4 +15,13 @@ if(isset($_POST['info'])){
 
 }
 
+echo "<form action=\"#\" method=\"POST\">
+  <input name=\"animal\" type=\"submit\" value=\"Page animal\">
+</form>";
+
+if(isset($_POST['animal'])){
+    header("location:http://localhost/exo-php/form_pref_anim.php");
+
+}
+
 ?>
