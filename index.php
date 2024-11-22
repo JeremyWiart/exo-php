@@ -11,7 +11,7 @@ echo "<form action=\"#\" method=\"POST\">
 </form>";
 
 if(isset($_POST['info'])){
-    header("location:http://localhost/info.php");
+    header("location:http://localhost/exo-php/info.php");
 
 }
 
