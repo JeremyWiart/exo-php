@@ -24,4 +24,13 @@ if(isset($_POST['animal'])){
 
 }
 
+echo "<form action=\"#\" method=\"POST\">
+  <input name=\"pref\" type=\"submit\" value=\"Page préférences\">
+</form>";
+
+if(isset($_POST['pref'])){
+    header("location:http://localhost/exo-php/preferences.php");
+
+}
+
 ?>
