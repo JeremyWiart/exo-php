@@ -33,4 +33,13 @@ if(isset($_POST['pref'])){
 
 }
 
+echo "<form action=\"#\" method=\"POST\">
+  <input name=\"edit\" type=\"submit\" value=\"Modifier Cookie\">
+</form>";
+
+if(isset($_POST['edit'])){
+    header("location:http://localhost/exo-php/edit.php");
+
+}
+
 ?>
