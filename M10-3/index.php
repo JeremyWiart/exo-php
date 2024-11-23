@@ -17,7 +17,7 @@
     <main class="flex items-center justify-center p-32">
         <div class="bg-white shadow-md rounded-lg w-full max-w-lg">
             <section id="form-section" class="p-6">
-                <form action="traitement.php" method="POST" class="text-center font-bold bg-gray-600 p-4 rounded-lg">
+                <form action="#" method="POST" class="text-center font-bold bg-gray-600 p-4 rounded-lg">
                     <h1>Formulaire Informations</h1>
                     <label for="nom">Nom:</label>
                     <input id="nom" name="nom" type="text" class="border-2 border-red-600 m-2 rounded-lg"></br>
@@ -30,7 +30,9 @@
                     <label for="msg">Message:</label>
                     <textarea id="msg" name="msg" class="border-2 border-red-600 m-2 rounded-lg"></textarea></br>
                     <input name="save" type="submit" value="Enregistré" class="w-1/4">
-
+                <?php 
+                include('traitement.php');
+                ?>
                     </form>
             </section>
         </div>

@@ -12,8 +12,8 @@
         setcookie('email',''.$mail.'',['expires' => time() + 365*24*3600,'secure' => true,'httponly' => false,]);
         setcookie('sujet',''.$sujet.'',['expires' => time() + 365*24*3600,'secure' => true,'httponly' => false,]);
         setcookie('message',''.$message.'',['expires' => time() + 365*24*3600,'secure' => true,'httponly' => false,]);
-        echo "enregistrement effectuer";
-        header( "refresh:3;url=http://localhost/exo-php/M10-3/" );
+        echo "<h2>enregistrement effectuer</h2>";
+        //header( "refresh:3;url=http://localhost/exo-php/M10-3/" );
         
 
     }else{
