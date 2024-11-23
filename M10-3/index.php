@@ -11,29 +11,29 @@
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" />
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-900">
     
 
     <main class="flex items-center justify-center p-32">
-    <div class="bg-white shadow-md rounded-lg w-full max-w-lg">
-    <section id="form-section" class="p-6">
-    <form action="#" method="POST">
-<h1>Formulaire Informations</h1>
-<label for="nom">Nom:</label>
-<input id="nom" name="nom" type="text"></br>
-<label for="genre">Genre:</label>
-<input id="genre" name="genre" type="text"></br>
-<label for="mail">Email:</label>
-<input id="mail" name="mail" type="email"></br>
-<label for="sujet">Sujet:</label>
-<input id="sujet" name="sujet" type="text"></br>
-<label for="msg">Message:</label>
-<textarea id="msg" name="msg"></textarea></br>
-  <input name="edit" type="submit" value="Enregistré">
+        <div class="bg-white shadow-md rounded-lg w-full max-w-lg">
+            <section id="form-section" class="p-6">
+                <form action="traitement.php" method="POST" class="text-center font-bold bg-gray-600 p-4 rounded-lg">
+                    <h1>Formulaire Informations</h1>
+                    <label for="nom">Nom:</label>
+                    <input id="nom" name="nom" type="text" class="border-2 border-red-600 m-2 rounded-lg"></br>
+                    <label for="genre">Genre:</label>
+                    <input id="genre" name="genre" type="text" class="border-2 border-red-600 m-2 rounded-lg"></br>
+                    <label for="mail">Email:</label>
+                    <input id="mail" name="mail" type="email" class="border-2 border-red-600 m-2 rounded-lg"></br>
+                    <label for="sujet">Sujet:</label>
+                    <input id="sujet" name="sujet" type="text" class="border-2 border-red-600 m-2 rounded-lg"></br>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="msg" class="border-2 border-red-600 m-2 rounded-lg"></textarea></br>
+                    <input name="edit" type="submit" value="Enregistré" class="w-1/4">
 
-</form>
-    </section>
-    </div>
+                    </form>
+            </section>
+        </div>
     </main>
 </body>
 
