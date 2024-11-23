@@ -29,7 +29,7 @@
                     <input id="sujet" name="sujet" type="text" class="border-2 border-red-600 m-2 rounded-lg"></br>
                     <label for="msg">Message:</label>
                     <textarea id="msg" name="msg" class="border-2 border-red-600 m-2 rounded-lg"></textarea></br>
-                    <input name="edit" type="submit" value="Enregistré" class="w-1/4">
+                    <input name="save" type="submit" value="Enregistré" class="w-1/4">
 
                     </form>
             </section>
