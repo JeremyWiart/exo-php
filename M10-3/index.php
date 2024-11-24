@@ -32,6 +32,17 @@
                     <input name="save" type="submit" value="Enregistré" class="w-1/4">
                 <?php 
                 include('traitement.php');
+                
+                echo "<form action=\"#\" method=\"POST\">
+                        <input name=\"info\" type=\"submit\" value=\"Page Infos\">
+                     </form>";
+              
+                        if(isset($_POST['info'])){
+                            header("location:http://localhost/exo-php/M10-3/info.php");
+                        
+                        }
+
+                
                 ?>
                     </form>
             </section>
