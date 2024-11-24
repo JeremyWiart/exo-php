@@ -17,7 +17,18 @@
     <main class="flex items-center justify-center p-32">
         <div class="bg-white shadow-md rounded-lg w-full max-w-lg">
             <section id="form-section" class="p-6">
-                <div>
+                <div class="bg-gray-400 shadow-md rounded-lg w-full max-w-lg">
+                    
+                    <?php
+                        $i=0;
+                        $cookies = ['nom','genre','email','sujet','message'];
+                        
+                        foreach($_COOKIE as $cookie){
+
+                            echo "<article>".$cookies[$i]." : ".$cookie." </article>";
+                            $i++;
+                        }
+                    ?>
 
                 </div>
 
