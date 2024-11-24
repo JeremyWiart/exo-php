@@ -12,21 +12,31 @@
 </head>
 
 <body class="bg-gray-900">
-    
+    <?php
+        include('header.php');
+    ?>
 
     <main class="flex items-center justify-center p-32">
         <div class="bg-white shadow-md rounded-lg w-full max-w-lg">
-            <section id="form-section" class="p-6">
-                <div class="bg-gray-400 shadow-md rounded-lg w-full max-w-lg">
-                    
+            <section id="form-section" class="p-6 text-center bg-gray-600">
+                 <h1 class="bg-gray-400 font-bold border-4 border-black rounded-lg">Infos personnel</h1>
+                <div class=" shadow-md rounded-lg w-full max-w-lg text-center">
+                   
                     <?php
                         $i=0;
                         $cookies = ['nom','genre','email','sujet','message'];
-                        
                         foreach($_COOKIE as $cookie){
-
-                            echo "<article>".$cookies[$i]." : ".$cookie." </article>";
+                            echo "<article class=\"border-2 border-red-600 rounded-lg bg-gray-400 m-2\">".$cookies[$i]." : ".$cookie." </article>";
                             $i++;
+                        }
+
+                        echo "<form action=\"#\" method=\"POST\">
+                        <input name=\"index\" type=\"submit\" value=\"Index\" class=\"border-2 border-black w-1/4 rounded-lg\">
+                        </form>";
+              
+                        if(isset($_POST['index'])){
+                            header("location:http://localhost/exo-php/M10-3/index.php");
+                        
                         }
                     ?>
 
@@ -35,6 +45,9 @@
             </section>
         </div>
     </main>
+    <?php
+        include('footer.php');
+    ?>
 </body>
 
 </html>
