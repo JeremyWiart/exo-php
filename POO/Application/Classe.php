@@ -1,6 +1,6 @@
 <?php
 
-Interface Talent{
+Interface Classe{
 
     public function cavalier();
     public function magicien();

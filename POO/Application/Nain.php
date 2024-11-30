@@ -1,18 +1,31 @@
 <?php
-class Nain extends Personnage implements Arme, Talent {
+class Nain extends Personnage implements Arme, Classe {
     protected string $race;
     protected string $talents;
     protected string $hache;
    
-    public function arc(){}
-    public function hache(){
-        $this->force = 1000;
+    public function arc(){
+
+        $this->force = 120;
     }
-    public function epee(){}
-    public function baton(){}
-    public function batonMagique(){}
-    public function dague(){}
-    public function masse(){}
+    public function hache(){
+        $this->force = 100 + $this->force;
+    }
+    public function epee(){
+        $this->force = 120;
+    }
+    public function baton(){
+        $this->force = 60;
+    }
+    public function batonMagique(){
+        $this->force = 100;
+    }
+    public function dague(){
+        $this->force = 90;
+    }
+    public function masse(){
+        $this->force = 110;
+    }
     public function cavalier(){}
     public function magicien(){}
     public function guerrier(){}
@@ -23,15 +36,27 @@ class Nain extends Personnage implements Arme, Talent {
     public function __construct(string $name) {
         $this->name = $name;
         $this->pv = 100;
-        $this->armure = 120;
-        $this->force = 80;
+        $this->armure = 280;
+        $this->force = 90;
         $this->enVie = true;
+        $this->race = "Nain";
 }
 
         public function defendre(){
-            
             return $this->armure;
+        }
 
+        public function attaquer(){
+        $this->hache(); 
+        return $this->force;
+        }
+
+        public function deceder(){
+
+        }
+    
+        public function crashTheGameIfLoose(){
+    
         }
    
     public function setName ( string $name ) {
@@ -67,5 +92,12 @@ class Nain extends Personnage implements Arme, Talent {
     }
     public function getEnVie () {
         return $this->enVie;
+    }
+
+    public function setRace ( string $race ) {
+        $this->race = $race;
+    }
+    public function getRace () {
+        return $this->race;
     }
 }
